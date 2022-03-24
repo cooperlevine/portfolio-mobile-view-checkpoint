@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/logo-drk.png">
+    <link rel='stylesheet' href='css/html5reset.css'>
+    <link rel='stylesheet' href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Fruktur&display=swap" rel="stylesheet">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XPV689C17J"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-XPV689C17J');
+    </script>
+    <script src="https://kit.fontawesome.com/c98e914e25.js" crossorigin="anonymous"></script>
+    <title>Esports: The 2k Evolution</title>
+</head>
+<body>
+
+    <a class  = "skip" href = "#main">Skip to Main Content</a>
+
+    <header>
+
+        <nav>
+            <ul>
+                <li><a href = "index.html">Home</a></li>
+                <li><a href = "gamemodes.html">Gamemodes</a></li>
+                <li><a href = "franchise.html">Franchise</a></li>
+                <li class="active"><a href = "esports.html">Esports</a></li>
+            </ul>
+        </nav>
+        
+        <h1 id="main">Esports: The 2k Evolution</h1>
+
+    </header>
+
+    <main class="container">
+
+        <div id="esport-image" class='image'>
+            <img class = "landscape" src = "images/esports-comp.jpg" alt = "A live competition within the NBA esports league showcasing two different teams stationed behind their computer screens." width="200"/>
+        </div> 
+        <div class="esport-content">
+            <p>NBA 2k's wide-reaching popularity over the years has established the game as a marketable competition within the esports world. Esports are multiplayer video games played competitively for spectators. It is typically a competition among professional gamers. Recently, though, streamers including celebrities, well-known NBA atheltes, and lesser known competitors have also taken part in live, online NBA 2k competitions for massive rewards. The esports component of the game is gaining so much traction that the National Basketball Association created an esports league focused on the NBA 2k franchise in 2017.</p>
+        </div>
+
+        <div class="league-content">
+            <p>Known as the NBA 2k League, the first live esports competitions began in 2018. The NBA 2k League was the first esports league to be completely controlled by a North American professional sports league. The teams themselves very much mirror the NBA. There are five esports players to a team, each one controlling their own MyPlayer with a certain basketball position. Teams are directly operated by NBA franchises, and they face off against each other over the course of a season in the current year's NBA 2k game. Like the NBA, the league is comprised of a regular season, playoffs, and finals.</p>
+        </div>
+        <div id="league-image" class='image'>
+            <!--
+            <img class = "landscape" src = "images/league-logo.jpg" alt = "The NBA 2k league's official logo." width="200"/>
+            -->
+            <img class = "landscape" src = "images/league-teams.jpg" alt = "The 23 teams currently involved in the NBA 2k League along with their individual logos." width="200"/>
+            <!--
+            <img class = "landscape" src = "images/league.jpg" alt = "A live competition within the NBA 2k League where two esports teams face off in front of a live audience. " width="200"/>
+            -->
+        </div>
+
+    </main>
+
+    <footer>
+        <form action="https://formspree.io/f/xpzbldrw" method="POST">
+            <fieldset>
+              <legend>Contact Form</legend>
+          
+              <label for="name_id">Your Name <i class="fa-solid fa-file-signature"></i></label>
+              <input type="text" placeholder="Enter Your Name" id = "name_id" name="name" required>
+          
+              <label for="email_id">Your Email <i class="fa-solid fa-envelope"></i></label>
+              <input type="email" placeholder="Enter Your Email" id = "email_id" name="email" required>
+          
+              <label for="phone_id">Your Phone Number <i class="fa-solid fa-square-phone"></i></label>
+              <input type="tel" name="phone" placeholder="Format: 123-456-7890" id = "phone_id" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+          
+              <label for="msg">Leave A Message <i class="fa-solid fa-message"></i></label>
+              <div class="textarea">
+                  <textarea placeholder="Enter your message" id = "msg" name="mesg" required></textarea><br>
+              </div>
+              
+              <label for ="cBox">Remember me <!--<i class="fa-solid fa-bookmark">--></i></label>
+              <input type="checkbox" checked="checked" name="remember" id = "cBox"> 
+          
+              <input type="submit" value = "Contact Me">
+            </fieldset>
+        </form>
+
+        <p>Cooper Levine &copy; 2022</p>
+    </footer>
+
+</body>
+</html>

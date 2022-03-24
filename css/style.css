@@ -1,0 +1,388 @@
+body{
+    background: radial-gradient(circle, rgba(255,255,255,1) 85%, rgba(255,0,0,1) 100%);
+    background-image: url(../images/cement2.png);
+}
+
+h1{
+    font-size: 45px;
+    padding: 20px 12px;
+    border: 10px ridge red;
+    background-color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Fruktur', cursive;
+}
+
+/*
+.title{
+    background-image: url(../images/logo-lt.jpg);
+    background-size: cover;
+    height: 450px;
+    width: 750px;
+    margin: auto;
+    background-repeat: no-repeat;
+    border: 10px ridge red;
+}*/
+
+
+h2{
+    font-size: 25px;
+    padding: 10px;
+    margin-left: 1px;
+    text-align: center;
+    font-family: 'Fruktur', cursive;
+}
+
+p{
+    font-size: 15px;
+    padding: 10px;
+    margin-left: 1px;
+    text-align: left;
+}
+
+nav li{
+    padding: 15px 2px;
+    margin: 20px 2px;
+    background: red;
+    border: 6px outset red;
+    width: 20%;
+    font-size: 12.5px;
+    text-align: center;
+    font-family: 'Fruktur', cursive;
+}
+
+nav ul{
+    list-style: none;
+}
+
+a:link{
+    color: black;
+    text-decoration: none;
+}
+
+a:visited{
+    color: black;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+a.skip{
+    background: white;
+    left: 0;
+    padding: 6px;
+    position: absolute;
+    top: -40px;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 1;
+  }
+  
+  a.skip:focus{
+    top:20px;
+    color: black;
+    text-decoration-style: solid;
+  }
+
+.active{
+    background: white;
+    font-weight: bold;
+    border: 8px inset red;
+    text-transform: uppercase;
+}
+
+/*
+img{
+    width: 200px;
+    height: 200px;
+    padding: 5px;
+    margin: 10px 10px;
+    border: 7px inset red;
+    opacity: 100%;
+    border-start-end-radius: 10%;
+    border-end-start-radius: 10%;
+}
+
+.landscape{
+    height: 200px;
+    width: 300px;
+}
+
+
+.vertical{
+    height: 300px;
+    width: 200px;
+}
+
+div{
+    text-align: center;
+}
+
+div img:hover:nth-child(2n){
+    border: 7px outset red;
+    padding: 0%;
+    margin: 10px 5px;
+    opacity: .5;
+    transform: scale(1.075);
+    transition: .3s ease-in-out;
+    border-end-end-radius: 10%;
+    border-start-start-radius: 10%;
+}
+*/
+
+footer p{
+    background: red;
+    margin: 10px;
+    border: ridge black;
+}
+
+footer p{
+    text-align: center;
+    padding: 8px 10px 8px 10px;
+    background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(255,255,255,1) 30%, rgba(255,255,255,1) 70%, rgba(255,0,0,1) 100%);
+}
+
+form legend {
+    font-size: 25px;
+    padding: 10px;
+}
+
+form {
+    background: white;
+    z-index: -1;
+    margin: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0px;
+    display: inline-block;
+    border: 6px outset red;
+    box-sizing: border-box; 
+}
+  
+input[type=submit] {
+    background-color: red;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%; 
+}
+
+input[type=submit]:hover {
+    background-color: white;
+    color: black;
+    border: 3px outset red;
+}
+
+label{
+    display: block;
+    padding: 8px 0px;
+    text-align: center;
+}
+
+textarea {
+    display: block;
+    margin: auto;
+    width: 80%;
+    max-width: 80%;
+    min-height: 15px;
+    padding: 8px 0;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: 3px solid red;
+    align-items: stretch;
+    /*
+    position: sticky;
+    top: 0px;
+    */
+}
+
+nav{
+    background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(255,255,255,1) 30%, rgba(255,255,255,1) 70%, rgba(255,0,0,1) 100%);;
+    width: 100%;
+    border: 3px solid red;
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+}
+
+header ul{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+
+}
+
+header ul li{
+    flex-basis: 150px;
+}
+
+.glitch {
+    align-self: center;
+    border: none;
+    height: 200px;
+    width: 350px;
+}
+
+.glitch{
+    position: relative;
+    width: 400px;
+    height: 250px;
+    background: url(../images/logo-lt.jpg);
+    background-size: contain;
+}
+
+.glitch:before
+  {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../images/logo-lt.jpg);
+    background-size: contain; 
+    opacity: .5;
+    mix-blend-mode: hard-light;
+    animation: glitch1 10s linear;
+  }
+
+@keyframes glitch1
+{
+  0%
+  {
+    background-position: 0 0;
+    filter: hue-rotate(0deg);
+  }
+  10%
+  {
+    background-position: 15px 0;
+  }
+  15%
+  {
+    background-position: -15px 0;
+  }
+  20%
+  {
+    filter: hue-rotate(360deg);
+  }
+  25%
+  {
+    background-position: 0 0;
+    filter: hue-rotate(0deg);
+  }
+  100%
+  {
+    background-position: 0 0;
+    filter: hue-rotate(0deg);
+  }
+}
+
+@media screen and (prefers-reduced-motion){
+    .glitch:before{
+        animation: none;
+    }
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 2fr 8fr 2fr 1fr;
+    row-gap: 20px;
+}
+
+.welcome-content, .all-content, .playnow-content, .mycareer-content, .franchise-content, .myteam-content, .game-content, .mynba-content, .mobile-content, .esport-content, .league-content{
+    grid-column: 3/4;
+    z-index: 5;
+    align-self: center;
+    max-height: 20vh;
+    overflow: scroll;
+    background-color: rgba(255,255,255,.8);
+    border: 5px outset red;
+}
+
+.container div img{
+    width: 100%;
+}
+
+#dunk-image, #players-image, #couch-image, #tatum-image, #tipoff-image, #wnba-image, #ratings-image, #myplayer-image, #head-image, #city-image, #myleague-image, #lineup-image, #myteam-image, #evolution-image, #mynba-image, #mobile-image, #esport-image, #league-image{
+    grid-column: 2/5;
+    max-height: 400px;
+    overflow: hidden;
+    padding: 10px;
+}
+
+.welcome-content, #dunk-image, #tipoff-image, .playnow-content, .game-content, #evolution-image, .esport-content, #esport-image{
+    grid-row: 1/2;
+}
+
+#players-image, .mynba-content, #wnba-image, #mynba-image, .league-content, #league-image{
+    grid-row: 2/3;
+}
+
+#couch-image, #ratings-image, .mobile-content, #mobile-image{
+    grid-row: 3/4;
+}
+
+.all-content, #tatum-image, .mycareer-content, #myplayer-image{
+    grid-row: 4/5;
+}
+
+#head-image{
+    grid-row: 5/6;
+}
+
+#city-image{
+    grid-row: 6/7;
+}
+
+.franchise-content, #myleague-image{
+    grid-row: 7/8;
+}
+
+#lineup-image{
+    grid-row: 8/9;
+}
+
+.myteam-content, #myteam-image{
+    grid-row: 9/10
+}
+
+.gallery{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.gallery img{
+    margin: 10px 10px;
+    min-width: 30vh;
+}
+
+.flex-content{
+    padding: 10px;
+    margin: 15px auto;
+    width: 85%;
+    text-align: center;
+    background-color: rgba(255,255,255);
+    border: 5px outset red;
+}
+
+.container div:first-of-type img:first-of-type{
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+  
+.container div:last-of-type img:last-of-type{
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+  
